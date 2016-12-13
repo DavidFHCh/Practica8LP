@@ -37,7 +37,11 @@ public class InputOutputAnalLex{
 						}while(!input.equals("FIN"));
 
 						//Aqui llamo al coso lexico.
-						System.out.println(entrada + "    " + "ahi esta la terminal mijo");
+						AnalLex al1 = new AnalLex(entrada);
+						ArrayList<String> salida1 = al1.run();
+
+						for(String s: salida1)
+							System.out.println(s);
 						break;
 					case "2":
 						System.out.println("Por favor introduce la direccion absoluta del archivo: \n");
@@ -50,7 +54,11 @@ public class InputOutputAnalLex{
 						}
 
 						//Aqui llamo al lexico.
-						System.out.println(entrada + "    " + "ahi esta por archivo mijo");
+						AnalLex al = new AnalLex(entrada);
+						ArrayList<String> salida = al.run();
+
+						for(String s: salida)
+							System.out.println(s);
 						break;
 					case "3":
 						continuo = false;
@@ -61,6 +69,8 @@ public class InputOutputAnalLex{
 			}
 		}catch(Exception e){
 			System.err.println("Error al leer Archivo.");
+			e.printStackTrace();
+
 		}
 	}
 }

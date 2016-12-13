@@ -14,6 +14,6 @@ public class OPPattern extends LexerPatterns{
 	*	@return el Patron.
 	*/
 	public String getPattern(){
-		return "+|-|*|/|%|min|max|pow|number?|and|or|not|<|>|<=|>=|=|!=|zero?|head|tail|empty?|list?";
+		return "\\+|\\-|\\*|/|%|min|max|pow|number?|and|or|not|<|>|<=|>=|=|!=|zero?|head|tail|empty?|list?|cons";
 	}
 }

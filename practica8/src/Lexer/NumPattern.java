@@ -14,6 +14,6 @@ public class NumPattern extends LexerPatterns{
 	*	@return el Patron.
 	*/
 	public String getPattern(){
-		return "(\\+|-)?([0-9]+(\\.[0-9]+))";
+		return "(\\+|-)?([0-9]+)";
 	}
 }
